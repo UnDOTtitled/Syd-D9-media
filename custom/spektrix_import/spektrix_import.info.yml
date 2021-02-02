@@ -10,3 +10,4 @@ dependencies:
   - migrate_tools
   - datetime_range
   - prepopulate
+  - eck
