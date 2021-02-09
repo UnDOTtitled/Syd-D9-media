@@ -6,11 +6,11 @@ dependencies:
     - eck.eck_type.performances.performance
     - field.storage.performances.field_event
     - node.type.event
-  module:
-    - spektrix_import
   enforced:
     module:
-      - spektrix_import  
+      - spektrix_import
+_core:
+  default_config_hash: WNUvQjmYVNnftpBWWgjlh4ZDvWuob-RAdidZgcCU0nI
 id: performances.performance.field_event
 field_name: field_event
 entity_type: performances

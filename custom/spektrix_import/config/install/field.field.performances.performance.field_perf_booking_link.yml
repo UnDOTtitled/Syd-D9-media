@@ -5,12 +5,13 @@ dependencies:
   config:
     - eck.eck_type.performances.performance
     - field.storage.performances.field_perf_booking_link
-  module:
-    - link
-    - spektrix_import
   enforced:
     module:
-      - spektrix_import  
+      - spektrix_import
+  module:
+    - link
+_core:
+  default_config_hash: Q3-GftK3EyPWv_0KgYr8psIabA0jjZalAXNJQpdOIWM
 id: performances.performance.field_perf_booking_link
 field_name: field_perf_booking_link
 entity_type: performances

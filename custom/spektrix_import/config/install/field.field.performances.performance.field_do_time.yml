@@ -5,11 +5,11 @@ dependencies:
   config:
     - eck.eck_type.performances.performance
     - field.storage.performances.field_do_time
-  module:
-    - spektrix_import
   enforced:
     module:
-      - spektrix_import  
+      - spektrix_import
+_core:
+  default_config_hash: LkzIA5E_eKnRzyaatlroaXK0pnNlZJg_d-L6Cfj0z_c
 id: performances.performance.field_do_time
 field_name: field_do_time
 entity_type: performances

@@ -5,6 +5,8 @@ dependencies:
   config:
     - eck.eck_type.performances.performance
     - field.storage.performances.field_availability_percentage
+_core:
+  default_config_hash: '-s-DylqmSiLoq0tfQ1o2zEx6K1Z4zTpYC5y5rT1IP2Q'
 id: performances.performance.field_availability_percentage
 field_name: field_availability_percentage
 entity_type: performances

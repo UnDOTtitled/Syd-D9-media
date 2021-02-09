@@ -5,11 +5,11 @@ dependencies:
   config:
     - eck.eck_type.performances.performance
     - field.storage.performances.field_availability_override
-  module:
-    - spektrix_import
   enforced:
     module:
-      - spektrix_import  
+      - spektrix_import
+_core:
+  default_config_hash: EX-ykrfUaFRY3EQ5R3NTzDp4wQ4EURgGi-PS2zF7a8g
 id: performances.performance.field_availability_override
 field_name: field_availability_override
 entity_type: performances

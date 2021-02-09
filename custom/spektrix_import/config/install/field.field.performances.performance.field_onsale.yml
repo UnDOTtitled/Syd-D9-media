@@ -5,11 +5,11 @@ dependencies:
   config:
     - eck.eck_type.performances.performance
     - field.storage.performances.field_onsale
-  module:
-    - spektrix_import
   enforced:
     module:
-      - spektrix_import  
+      - spektrix_import
+_core:
+  default_config_hash: MLwaJsFwsxNjzniWJjjr-hPlqkAvq304yVrmNXAwe-c
 id: performances.performance.field_onsale
 field_name: field_onsale
 entity_type: performances

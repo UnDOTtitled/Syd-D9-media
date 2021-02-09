@@ -5,11 +5,11 @@ dependencies:
   config:
     - eck.eck_type.performances.performance
     - field.storage.performances.field_spektrix_perf_id
-  module:
-    - spektrix_import
   enforced:
     module:
-      - spektrix_import  
+      - spektrix_import
+_core:
+  default_config_hash: x2n8GrO8-rNOavCsQANtw6bSpn2EaNEZ8zZJ6khtvuo
 id: performances.performance.field_spektrix_perf_id
 field_name: field_spektrix_perf_id
 entity_type: performances
