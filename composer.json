@@ -105,7 +105,8 @@
     "kint-php/kint": "^3.3",
     "pantheon-upstreams/upstream-configuration": "*",
     "unt/spektrix_import": "dev-master",
-    "unt/syd_tweaks": "dev-master"
+    "unt/syd_tweaks": "dev-master",
+    "drupal/rest_views": "^2.0"
   },
   "conflict": {
     "drupal/drupal": "*"

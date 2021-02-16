@@ -61,6 +61,9 @@ module:
   prepopulate: 0
   publishcontent: 0
   redirect: 0
+  rest: 0  
+  rest_export_nested: 0
+  rest_views: 0
   rename_admin_paths: 0
   roleassign: 0
   serialization: 0
