@@ -6,6 +6,8 @@ dependencies:
     - eck.eck_type.performances.performance
     - field.storage.performances.field_availability
     - taxonomy.vocabulary.availability
+_core:
+  default_config_hash: 6pvkTEgtX_iIUnWYOJbcqrUZZUOLhOqZZa2ijs-acD8
 id: performances.performance.field_availability
 field_name: field_availability
 entity_type: performances

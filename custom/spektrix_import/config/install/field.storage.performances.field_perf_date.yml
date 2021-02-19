@@ -2,13 +2,14 @@ uuid: 2f45675f-ea14-478d-9849-8d80143b8719
 langcode: en
 status: true
 dependencies:
+  enforced:
+    module:
+      - spektrix_import
   module:
     - datetime
     - eck
-    - spektrix_import
-  enforced:
-    module:
-      - spektrix_import  
+_core:
+  default_config_hash: 7APciZ4bxLNIUTas_vPubOoZKgtI_8LYHpDt9oSx-lc
 id: performances.field_perf_date
 field_name: field_perf_date
 entity_type: performances

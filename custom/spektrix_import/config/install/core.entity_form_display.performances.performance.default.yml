@@ -4,7 +4,6 @@ status: true
 dependencies:
   config:
     - eck.eck_type.performances.performance
-    - field.field.performances.performance.field_accessibility
     - field.field.performances.performance.field_availability
     - field.field.performances.performance.field_availability_override
     - field.field.performances.performance.field_availability_percentage
@@ -13,7 +12,6 @@ dependencies:
     - field.field.performances.performance.field_onsale
     - field.field.performances.performance.field_perf_booking_link
     - field.field.performances.performance.field_perf_date
-    - field.field.performances.performance.field_sold_out
     - field.field.performances.performance.field_spektrix_perf_id
   enforced:
     module:
@@ -80,12 +78,6 @@ targetEntityType: performances
 bundle: performance
 mode: default
 content:
-  field_accessibility:
-    type: options_select
-    weight: 8
-    region: content
-    settings: {  }
-    third_party_settings: {  }
   field_availability:
     type: options_select
     weight: 9
@@ -138,13 +130,6 @@ content:
     settings: {  }
     third_party_settings: {  }
     type: datetime_default
-    region: content
-  field_sold_out:
-    weight: 6
-    settings:
-      display_label: true
-    third_party_settings: {  }
-    type: boolean_checkbox
     region: content
   field_spektrix_perf_id:
     weight: 4
