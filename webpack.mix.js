@@ -5,60 +5,103 @@
  */
 
 /**
+ * Local setup
+ */
+const hostname = 'syd.local'
+
+/**
  * Dependencies
  */
-const mix = require('laravel-mix'),
-  copyWebpackPlugin = require('copy-webpack-plugin'),
-  imageminPlugin = require('imagemin-webpack-plugin').default,
-  mixGlob = require('laravel-mix-glob'),
-  themeDirectory = './web/themes/pippip';
+const mix = require('laravel-mix')
+const copyWebpackPlugin = require('copy-webpack-plugin')
+const imageminPlugin = require('imagemin-webpack-plugin').default
+const mixGlob = require('laravel-mix-glob')
 
 /**
  * Variables
  */
-const hostname = 'syd.local',
-  themeAssets = `${themeDirectory}/assets`,
-  glob = new mixGlob({ mix });
+const themeDirectory = './web/themes/pippip'
+const themeAssets = `${themeDirectory}/assets`
+const glob = new mixGlob({ mix })
 
 /**
  * Config
  */
-mix.setPublicPath(`${themeDirectory}/dist`);
-mix.disableSuccessNotifications();
+mix.setPublicPath(`${themeDirectory}/dist`)
+mix.disableSuccessNotifications()
 
 mix.options({
   processCssUrls: false,
-  postCss: [
-    require('autoprefixer')({
-      grid: 'no-autoplace',
-    }),
-  ],
-});
+  autoprefixer: { remove: false },
+})
 
 mix.browserSync({
   proxy: `https://${hostname}`,
   ghostMode: false,
-  files: [`${themeDirectory}/templates/**/*.twig`, `${themeAssets}/js/**/*.js`, `${themeAssets}/sass/**/*.scss`],
-});
+  files: [
+    `${themeDirectory}/templates/**/*.twig`,
+    `${themeAssets}/sass/**/*.scss`,
+    `${themeAssets}/js/**/*.js`,
+    `${themeAssets}/js/**/*.ts`,
+    `${themeAssets}/js/**/*.tsx`,
+  ],
+})
 
 if (mix.inProduction()) {
-  mix.version();
-  mix.disableNotifications();
+  mix.version()
+  mix.disableNotifications()
 } else {
-  mix.sourceMaps();
-  mix.webpackConfig({ devtool: 'inline-source-map' });
+  mix.sourceMaps()
+  mix.webpackConfig({ devtool: 'inline-source-map' })
 }
 
 mix.webpackConfig({
   stats: 'errors-warnings',
-});
+})
 
 /**
  * Assets
  */
-glob.sass(`${themeAssets}/sass/*.scss`, 'css');
-glob.js(`${themeAssets}/js/*.js`, 'js');
-mix.copyDirectory(`${themeAssets}/font`, `${themeDirectory}/dist/font`);
+glob.sass(`${themeAssets}/sass/*.scss`, 'css')
+glob.js(`${themeAssets}/js/*.js`, 'js')
+glob.js(`${themeAssets}/js/*.ts`, 'js')
+glob.js(`${themeAssets}/js/*.tsx`, 'js')
+mix.copyDirectory(`${themeAssets}/font`, `${themeDirectory}/dist/font`)
+
+/**
+ * Custom Webpack Configuration
+ * 1. Add Typescript support
+ * 2. Copy icon/img assets after being optimised
+ * 3. Optimise SVGs
+ */
+mix.webpackConfig({
+  module: {
+    rules: [
+      {
+        test: /\.ts|\.tsx$/,
+        loader: 'ts-loader',
+      },
+    ],
+  },
+  resolve: {
+    extensions: ['.ts', '.tsx'],
+  },
+  plugins: [
+    new copyWebpackPlugin({
+      patterns: [{ from: `${themeAssets}/img`, to: 'img' }],
+    }),
+    new imageminPlugin({
+      test: /\.(svg)$/i,
+      svgo: {
+        plugins: [
+          {
+            removeViewBox: false,
+          },
+        ],
+      },
+    }),
+  ],
+})
 
 /**
  * Custom Webpack Configuration
@@ -67,9 +110,6 @@ mix.copyDirectory(`${themeAssets}/font`, `${themeDirectory}/dist/font`);
 if (mix.inProduction()) {
   mix.webpackConfig({
     plugins: [
-      new copyWebpackPlugin({
-        patterns: [{ from: `${themeAssets}/img`, to: 'img' }],
-      }),
       new imageminPlugin({
         test: /\.(jpe?g|png|svg)$/i,
         svgo: {
@@ -90,5 +130,5 @@ if (mix.inProduction()) {
         },
       }),
     ],
-  });
+  })
 }

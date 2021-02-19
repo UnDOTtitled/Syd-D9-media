@@ -1,6 +1,0 @@
-{
-  "name": "unt/spektrix_import",
-  "description": "Spektrix custom importer",
-  "type": "drupal-module",
-  "license": "GPL-2.0-or-later"
-}

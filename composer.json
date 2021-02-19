@@ -17,10 +17,6 @@
       "url": "custom/syd_tweaks"
     },
     {
-      "type": "path",
-      "url": "custom/spektrix_import"
-    },
-    {
       "type": "package",
       "package": {
         "name": "enyo/dropzone",
@@ -87,10 +83,7 @@
     "drupal/menu_block": "^1.6",
     "drupal/menu_link_attributes": "^1.1",
     "drupal/metatag": "^1.15",
-    "drupal/migrate_plus": "^5.1",
-    "drupal/migrate_tools": "^5.0",
     "drupal/pathauto": "^1.8",
-    "drupal/prepopulate": "^2.3",
     "drupal/publishcontent": "^1.2",
     "drupal/redirect": "^1.6",
     "drupal/rename_admin_paths": "^2.0",

@@ -16,7 +16,7 @@ Contents:
 
 ## About
 
-Pippip v3 is a Drupal 8 base theme, utilising Laravel Mix, Browsersync, ES6 & SASS. Styles and templates structure loosely follows the [Patterlab methodology](https://patternlab.io/).
+Pippip is a Drupal 9 base theme, utilising Laravel Mix, Browsersync, Typescript & SASS. Styles and templates naming conventions loosely follows the [Patterlab methodology](https://patternlab.io/).
 
 #### Browser support
 
@@ -28,15 +28,15 @@ Pippip v3 is a Drupal 8 base theme, utilising Laravel Mix, Browsersync, ES6 & SA
 ## Setup
 
 - Place all provided image assets in `./assets/img`
-- Place all fonts in `./dist/fonts`
-- From the root pippip folder:
+- Place all fonts in `./assets/font`
+- From the project's root folder:
   - Run `npm install`
   - Update `hostname` in `webpack.mix.js` with local site domain
   - Run `npm start` to start compiling & watching the files
 
 ## Laravel Mix
 
-Pippip v3 runs [Laravel Mix](https://laravel.com/docs/5.7/mix). Run `npm start` to begin development. _Note: requires npm minumum version 10_
+Pippip runs [Laravel Mix](https://laravel.com/docs/5.7/mix). Run `npm start` to begin development. _Note: requires npm minumum version 10_
 
 ### Tasks
 
@@ -55,7 +55,7 @@ Icons can be imported directly into **.twig** files using `{{ get_icon('icon') }
 
 ## CSS
 
-Pippip v3 is [SASS](https://sass-lang.com) based.
+Pippip is [SASS](https://sass-lang.com) based.
 
 #### Included helper classes
 
@@ -80,13 +80,13 @@ See [documentation](http://reflexgrid.com/docs/) for details & usage.
 
 ## JS
 
-Pippip v3 is ES6 based (rather than jQuery) by default, and gets converted to ES5 on compile for better browser support.
+Pippip is Typescript based by default, and gets converted to ES5 on compile for better browser support.
 
 #### Included JS files
 
-- `assets/js/defaults.js` contains all the default plugins & global functions
-- `assets/js/global.js` is a blank file for global project specific JS
-- `assets/js/emmsg.js` contains emergency message JS
+- `assets/js/defaults.ts` contains all the default plugins & global functions
+- `assets/js/global.ts` is a blank file for global project specific JS
+- `assets/js/emmsg.ts` contains emergency message JS
 
 #### Included plugins
 
