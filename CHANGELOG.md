@@ -26,3 +26,14 @@ All notable changes to this project will be documented in this file.
 ### Changed
 
 - Pulled latest Pantheon composer settings
+
+## 2021-02-23
+
+### Added
+
+- view_unpublished module & config
+- rebuild_cache_access module & config
+
+### Changed
+
+- Metatag generator D8 > D9

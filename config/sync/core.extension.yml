@@ -58,6 +58,7 @@ module:
   path: 0
   path_alias: 0
   publishcontent: 0
+  rebuild_cache_access: 0
   redirect: 0
   rest: 0  
   rest_export_nested: 0
@@ -79,6 +80,7 @@ module:
   user: 0
   video_embed_field: 0
   video_embed_media: 0
+  view_unpublished: 0
   views_ui: 0
   file_browser: 1
   menu_admin_per_menu: 1

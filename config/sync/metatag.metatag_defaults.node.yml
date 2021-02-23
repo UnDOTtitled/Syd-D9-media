@@ -11,7 +11,7 @@ tags:
   shortlink: '[current-page:url:unaliased]'
   image_src: '[node:field_image:banner_image]'
   description: '[node:summary]'
-  generator: 'Drupal 8 (https://www.drupal.org)'
+  generator: 'Drupal 9 (https://www.drupal.org)'
   abstract: '[current-page:url]'
   canonical_url: '[current-page:url:absolute]'
   og_site_name: '[site:name]'

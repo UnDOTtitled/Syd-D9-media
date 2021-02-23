@@ -55,6 +55,7 @@ permissions:
   - 'publish editable node type page'
   - 'publish own node type homepage'
   - 'publish own node type page'
+  - 'rebuild cache access'
   - 'revert all revisions'
   - 'revert homepage revisions'
   - 'revert page revisions'
