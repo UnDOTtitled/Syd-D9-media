@@ -37,3 +37,27 @@ All notable changes to this project will be documented in this file.
 ### Changed
 
 - Metatag generator D8 > D9
+
+## 2021-03-01
+
+### Added
+
+- User account settings
+
+### Changed
+
+- Site name
+
+## 2021-03-16
+
+### Changed
+
+- Added missing accordion init TS
+
+## 2021-05-18
+
+### Changed
+
+- Tweaked base SASS styling
+- Added missing Baguettebox init TS
+- Updated Emmsg TS with better defaults

@@ -57,7 +57,8 @@ $translateX: 0;
       }
 
       [data-nav='open'] & {
-        transform: translateY($translateY) translateX($translateX) rotate($rotation);
+        transform: translateY($translateY) translateX($translateX)
+          rotate($rotation);
       }
     }
     &-2 {
@@ -75,7 +76,8 @@ $translateX: 0;
       }
 
       [data-nav='open'] & {
-        transform: translateY($translateY * -1) translateX($translateX) rotate($rotation * -1);
+        transform: translateY($translateY * -1) translateX($translateX)
+          rotate($rotation * -1);
       }
     }
   }

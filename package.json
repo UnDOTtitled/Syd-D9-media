@@ -12,7 +12,8 @@
   "scripts": {
     "dev": "mix",
     "production": "mix --production",
-    "start": "mix watch"
+    "start": "mix watch",
+    "cypress": "export NODE_ENV=development && cypress open"
   },
   "dependencies": {
     "baguettebox.js": "^1.11.1",
@@ -27,15 +28,17 @@
     "zenscroll": "^4.0.2"
   },
   "devDependencies": {
-    "@typescript-eslint/eslint-plugin": "^4.15.1",
     "@babel/preset-typescript": "^7.12.17",
     "@types/focus-within": "^1.0.0",
     "@types/js-cookie": "^2.2.6",
     "@types/zenscroll": "^4.0.0",
+    "@typescript-eslint/eslint-plugin": "^4.15.1",
     "babel-eslint": "10.1.0",
     "browser-sync": "^2.26.14",
     "browser-sync-webpack-plugin": "^2.3.0",
     "copy-webpack-plugin": "^7.0.0",
+    "cypress": "^6.5.0",
+    "cypress-axe": "^0.12.2",
     "eslint": "^7.20.0",
     "eslint-config-airbnb": "^18.2.1",
     "eslint-config-airbnb-typescript": "^12.3.1",

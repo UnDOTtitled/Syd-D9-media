@@ -1,5 +1,5 @@
 uuid: c5930f40-0328-4218-bf9e-6ab7c21a210b
-name: 'D9 test'
+name: 'Syd D9 Upstream'
 mail: dp_admin@un.titled.co.uk
 slogan: ''
 page:
@@ -12,3 +12,4 @@ langcode: en
 default_langcode: en
 _core:
   default_config_hash: yXadRE77Va-G6dxhd2kPYapAvbnSvTF6hO4oXiOEynI
+mail_notification: ''

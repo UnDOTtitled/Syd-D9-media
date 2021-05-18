@@ -19,7 +19,7 @@ ul.plain {
 }
 
 img {
-  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
   transition: var(--transition);
 
   &.lazy {

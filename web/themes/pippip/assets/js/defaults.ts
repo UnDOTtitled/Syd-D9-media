@@ -3,6 +3,8 @@ import FocusWithin from 'focus-within'
 import zenscroll from 'zenscroll'
 import LazyLoad from 'vanilla-lazyload'
 import toggleDataAttr from './utils/toggleDataAttr'
+import 'van11y-accessible-accordion-aria'
+import baguetteBox from 'baguettebox.js'
 //import Choices from 'choices.js';
 
 /**
@@ -26,6 +28,25 @@ FocusWithin(document, {
 // if (document.querySelectorAll('select').length > 0) {
 //   const selectElements = new Choices('select');
 // }
+
+/*
+  Image galleries
+  url: https://www.npmjs.com/package/flickity
+  -----------------------------------------------
+
+  Usage:
+  <div class="gallery">
+      <a href="path-to-large-image" data-caption="">
+          <img src="path-to-thumbnail" alt="" />
+      </a>
+  </div>
+
+  Note: If not using, remove @import "../../node_modules/baguettebox.js/src/baguetteBox"; from `assets/sass/global.scss`
+*/
+
+if (document.querySelectorAll('.gallery')) {
+  baguetteBox.run('.gallery')
+}
 
 /*
   Menu burger

@@ -1,18 +1,20 @@
-import Cookies from 'js-cookie';
+// ! Note - update 'hideEmergencyMessage' to be named after the project to avoid any possible clashes
 
-const emergencyMessage = document.querySelector('.m-emmsg');
+import Cookies from 'js-cookie'
+
+const emergencyMessage = document.querySelector('.m-emmsg')
 
 if (emergencyMessage != null) {
-  if (!Cookies.get('apacHideEmmsg')) {
-    emergencyMessage.setAttribute('data-state', 'visible');
+  if (!Cookies.get('hideEmergencyMessage')) {
+    emergencyMessage.setAttribute('data-state', 'visible')
   }
 
-  const btn = document.querySelector('.m-emmsg__close');
+  const btn = document.querySelector('.m-emmsg__close')
 
-  btn.addEventListener('click', function(e) {
-    Cookies.set('apacHideEmmsg', 'true', { expires: 30 });
-    emergencyMessage.setAttribute('data-state', 'hidden');
+  btn.addEventListener('click', e => {
+    Cookies.set('hideEmergencyMessage', 'true', { expires: 30 })
+    emergencyMessage.setAttribute('data-state', 'hidden')
 
-    e.preventDefault();
-  });
+    e.preventDefault()
+  })
 }
