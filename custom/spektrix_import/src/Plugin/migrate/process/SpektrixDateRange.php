@@ -36,8 +36,8 @@ class SpektrixDateRange extends DefaultValue implements ContainerFactoryPluginIn
 	  if ($value[0] && is_numeric(strtotime($value[0]))) {
 		// Transform to start - end date
 		$value = array(
-			'value'	=>		format_date(strtotime($value[0]), 'custom', 'Y-m-d\TH:i:s', 'UTC'),
-			'end_value'	=>		format_date(strtotime($value[1]), 'custom', 'Y-m-d\TH:i:s', 'UTC'),
+			'value'	=>		\Drupal::service('date.formatter')->format(strtotime($value[0]), 'custom', 'Y-m-d\TH:i:s', 'UTC'),
+			'end_value'	=>		\Drupal::service('date.formatter')->format(strtotime($value[1]), 'custom', 'Y-m-d\TH:i:s', 'UTC'),
 		);
 	  }
 		
