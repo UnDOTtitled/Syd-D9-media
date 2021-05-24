@@ -97,6 +97,7 @@
     "drupal/rebuild_cache_access": "^1.7",
     "drupal/redirect": "^1.6",
     "drupal/rename_admin_paths": "^2.0",
+    "drupal/rest_views": "^2.0",
     "drupal/robotstxt": "^1.4",
     "drupal/roleassign": "^1.0@beta",
     "drupal/smart_trim": "^1.3",
@@ -105,14 +106,14 @@
     "drupal/twig_tweak": "^3.0",
     "drupal/video_embed_field": "^2.4",
     "drupal/view_unpublished": "^1.0",
+    "drupal/views_field_view": "^1.0@beta",
     "drupal/xmlsitemap": "^1.0",
     "enyo/dropzone": "^5.5",
     "kint-php/kint": "^3.3",
     "pantheon-upstreams/upstream-configuration": "*",
-    "unt/spektrix_import": "dev-master",
-    "unt/syd_tweaks": "dev-master",
     "unt/rest_export_nested": "dev-master",
-    "drupal/rest_views": "^2.0"
+    "unt/spektrix_import": "dev-master",
+    "unt/syd_tweaks": "dev-master"
   },
   "conflict": {
     "drupal/drupal": "*"
