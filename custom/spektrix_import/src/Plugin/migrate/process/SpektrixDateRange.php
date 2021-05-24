@@ -34,14 +34,13 @@ class SpektrixDateRange extends DefaultValue implements ContainerFactoryPluginIn
 	public function transform($value, MigrateExecutableInterface $migrate_executable, Row $row, $destination_property) {
       
 	  if ($value[0] && is_numeric(strtotime($value[0]))) {
-		// Transform to start - end date
-		$value = array(
-			'value'	=>		\Drupal::service('date.formatter')->format(strtotime($value[0]), 'custom', 'Y-m-d\TH:i:s', 'UTC'),
-			'end_value'	=>		\Drupal::service('date.formatter')->format(strtotime($value[1]), 'custom', 'Y-m-d\TH:i:s', 'UTC'),
-		);
+			// Transform to start - end date
+			$value = array(
+				'value'	=>		\Drupal::service('date.formatter')->format(strtotime($value[0]), 'custom', 'Y-m-d\TH:i:s', 'UTC'),
+				'end_value'	=>		\Drupal::service('date.formatter')->format(strtotime($value[1]), 'custom', 'Y-m-d\TH:i:s', 'UTC'),
+			);
 	  }
 		
 	  return $value;
 	}
-
 }

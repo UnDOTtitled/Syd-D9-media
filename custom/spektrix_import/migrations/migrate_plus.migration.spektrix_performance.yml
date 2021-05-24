@@ -66,7 +66,7 @@ process:
   field_spektrix_perf_id: EventInstanceId
   field_event:
     plugin: migration    
-    migration: spektrix_event
+    migration_lookup: spektrix_event
     source: Event
   title: EventInstanceId
   field_onsale: OnSaleOnWeb
