@@ -31,7 +31,7 @@ class SpektrixPerformance extends Url {
     $config = \Drupal::service('config.factory')->get('spektrix_import.settings');
     $domain = $config->get('spektrix_import_domain');
     $user = $config->get('spektrix_import_client');    
-    $endpoint = 'https://'. $domain .'/' . $user . '/api/v1/eventsrestful.svc/allattributes/from?date='. format_date(time(), 'custom', 'Y-m-d\TH:i:s');
+    $endpoint = 'https://'. $domain .'/' . $user . '/api/v1/eventsrestful.svc/allattributes/from?date='. \Drupal::service('date.formatter')->format(time(), 'custom', 'Y-m-d\TH:i:s');
     $configuration['urls'] = $endpoint;
 
     if (!is_array($configuration['urls'])) {
