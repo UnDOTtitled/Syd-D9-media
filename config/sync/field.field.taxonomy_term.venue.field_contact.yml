@@ -9,7 +9,7 @@ dependencies:
     - spektrix_import
   enforced:
     module:
-      - spektrix_import
+      - spektrix_import  
 id: taxonomy_term.venue.field_contact
 field_name: field_contact
 entity_type: taxonomy_term

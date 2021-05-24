@@ -2,10 +2,15 @@ uuid: c545f5bd-7026-405c-bce2-3dc7de7db28b
 langcode: en
 status: true
 dependencies:
+  module:
+    - spektrix_import
+  enforced:
+    module:
+      - spektrix_import
   config:
     - eck.eck_entity_type.performances
 _core:
   default_config_hash: UWQhsdhT839m9dxV16AuE7ovC6ePSu8asJAdBMkawXE
-type: performance
 name: Performance
+type: performance
 description: ''

@@ -9,7 +9,7 @@ dependencies:
     - spektrix_import
   enforced:
     module:
-      - spektrix_import
+      - spektrix_import  
 id: node.event.field_ymal_pages
 field_name: field_ymal_pages
 entity_type: node

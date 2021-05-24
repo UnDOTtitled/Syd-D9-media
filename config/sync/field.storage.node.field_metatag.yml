@@ -8,7 +8,7 @@ dependencies:
     - spektrix_import
   enforced:
     module:
-      - spektrix_import
+      - spektrix_import  
 id: node.field_metatag
 field_name: field_metatag
 entity_type: node

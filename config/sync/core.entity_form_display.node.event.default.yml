@@ -30,7 +30,7 @@ dependencies:
     - link
     - metatag
     - path
-    - text
+    - text    
     - spektrix_import
   enforced:
     module:

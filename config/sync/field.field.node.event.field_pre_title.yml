@@ -9,7 +9,7 @@ dependencies:
     - spektrix_import
   enforced:
     module:
-      - spektrix_import
+      - spektrix_import  
 id: node.event.field_pre_title
 field_name: field_pre_title
 entity_type: node

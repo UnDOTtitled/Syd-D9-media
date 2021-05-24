@@ -8,7 +8,7 @@ dependencies:
     - spektrix_import
   enforced:
     module:
-      - spektrix_import
+      - spektrix_import  
 id: taxonomy_term.field_loc
 field_name: field_loc
 entity_type: taxonomy_term

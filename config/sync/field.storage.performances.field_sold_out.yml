@@ -7,7 +7,7 @@ dependencies:
     - spektrix_import
   enforced:
     module:
-      - spektrix_import
+      - spektrix_import  
 id: performances.field_sold_out
 field_name: field_sold_out
 entity_type: performances

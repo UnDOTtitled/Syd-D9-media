@@ -10,7 +10,7 @@ dependencies:
     - spektrix_import
   enforced:
     module:
-      - spektrix_import
+      - spektrix_import  
 id: node.event.field_genre
 field_name: field_genre
 entity_type: node

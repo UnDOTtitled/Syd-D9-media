@@ -158,6 +158,4 @@ content:
     region: content
     third_party_settings: {  }
 hidden:
-  field_accessibility: true
   field_availability_percentage: true
-  field_sold_out: true
