@@ -7,7 +7,7 @@ dependencies:
     - spektrix_import
   enforced:
     module:
-      - spektrix_import  
+      - spektrix_import
 id: node.field_spektrix_event_id
 field_name: field_spektrix_event_id
 entity_type: node

@@ -1,7 +1,7 @@
 uuid: 6dcaeeed-9a18-4fd9-a581-910a1b454d3f
 langcode: en
 status: true
-dependencies: 
+dependencies:
   module:
     - spektrix_import
   enforced:
@@ -10,5 +10,4 @@ dependencies:
 name: Venue
 vid: venue
 description: ''
-hierarchy: 0
 weight: 0

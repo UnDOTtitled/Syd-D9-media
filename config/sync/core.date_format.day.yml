@@ -1,13 +1,13 @@
 uuid: f45091c8-0621-433f-b9dc-7b12db21868c
 langcode: en
 status: true
-dependencies: 
+dependencies:
   module:
     - spektrix_import
   enforced:
     module:
       - spektrix_import
 id: day
-label: 'Day'
+label: Day
 locked: false
 pattern: D

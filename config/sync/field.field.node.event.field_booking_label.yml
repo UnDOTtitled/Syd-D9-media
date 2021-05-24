@@ -9,7 +9,7 @@ dependencies:
     - spektrix_import
   enforced:
     module:
-      - spektrix_import  
+      - spektrix_import
 id: node.event.field_booking_label
 field_name: field_booking_label
 entity_type: node

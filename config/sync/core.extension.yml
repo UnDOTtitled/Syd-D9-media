@@ -2,7 +2,6 @@ module:
   admin_toolbar: 0
   admin_toolbar_links_access_filter: 0
   admin_toolbar_tools: 0
-  better_exposed_filters: 1
   block: 0
   block_content: 0
   block_content_permissions: 0
@@ -16,15 +15,12 @@ module:
   content_lock: 0
   ctools: 0
   ctools_entity_mask: 0
-  datetime: 1
-  datetime_range: 1
   dblog: 0
   devel: 0
   devel_entity_updates: 0
   dropzonejs: 0
   dropzonejs_eb_widget: 0
   dynamic_page_cache: 0
-  eck: 1
   editor: 0
   embed: 0
   entity_browser: 0
@@ -55,9 +51,6 @@ module:
   metatag: 0
   metatag_open_graph: 0
   metatag_twitter_cards: 0
-  migrate: 1
-  migrate_plus: 1
-  migrate_tools: 1
   minimal: 0
   node: 0
   page_cache: 0
@@ -66,18 +59,16 @@ module:
   publishcontent: 0
   rebuild_cache_access: 0
   redirect: 0
-  rest: 0  
+  rename_admin_paths: 0
+  rest: 0
   rest_export_nested: 0
   rest_views: 0
-  rename_admin_paths: 0
   robotstxt: 0
   roleassign: 0
   serialization: 0
   shortcut: 0
   smart_trim: 0
   sophron: 0
-  spektrix_import: 1
-  syd_tweaks: 1
   system: 0
   taxonomy: 0
   text: 0
@@ -87,19 +78,28 @@ module:
   user: 0
   video_embed_field: 0
   video_embed_media: 0
-  views_field_view: 1
   view_unpublished: 0
   views_ui: 0
+  better_exposed_filters: 1
+  datetime: 1
+  datetime_range: 1
+  eck: 1
   file_browser: 1
+  jquery_ui: 1
+  jquery_ui_datepicker: 1
+  jquery_ui_slider: 1
+  jquery_ui_touch_punch: 1
   menu_admin_per_menu: 1
+  migrate: 1
+  migrate_plus: 1
+  migrate_tools: 1
   pathauto: 1
+  prepopulate: 1
+  spektrix_import: 1
+  syd_tweaks: 1
+  views_field_view: 1
   xmlsitemap: 1
   views: 10
-  prepopulate: 1
-  jquery_ui: 1
-  jquery_ui_touch_punch: 1
-  jquery_ui_slider: 1
-  jquery_ui_datepicker: 1
 theme:
   stable: 0
   classy: 0

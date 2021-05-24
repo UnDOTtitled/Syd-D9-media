@@ -7,7 +7,7 @@ dependencies:
     - spektrix_import
   enforced:
     module:
-      - spektrix_import  
+      - spektrix_import
 third_party_settings:
   menu_ui:
     available_menus:
