@@ -1,0 +1,20 @@
+uuid: a784e657-5d04-4fda-80b8-bc77f6d1b1e2
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - taxonomy
+id: node.field_events_season_festival
+field_name: field_events_season_festival
+entity_type: node
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false
