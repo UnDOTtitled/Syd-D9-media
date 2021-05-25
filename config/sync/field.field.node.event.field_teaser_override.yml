@@ -10,7 +10,7 @@ dependencies:
     - spektrix_import
   enforced:
     module:
-      - spektrix_import  
+      - spektrix_import
 id: node.event.field_teaser_override
 field_name: field_teaser_override
 entity_type: node

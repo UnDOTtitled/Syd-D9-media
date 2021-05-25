@@ -10,7 +10,7 @@ dependencies:
     - spektrix_import
   enforced:
     module:
-      - spektrix_import  
+      - spektrix_import
 id: node.event.body
 field_name: body
 entity_type: node
@@ -23,4 +23,5 @@ default_value: {  }
 default_value_callback: ''
 settings:
   display_summary: true
+  required_summary: false
 field_type: text_with_summary

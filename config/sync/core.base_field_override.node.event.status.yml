@@ -8,7 +8,7 @@ dependencies:
     - spektrix_import
   enforced:
     module:
-      - spektrix_import  
+      - spektrix_import
 id: node.event.status
 field_name: status
 entity_type: node

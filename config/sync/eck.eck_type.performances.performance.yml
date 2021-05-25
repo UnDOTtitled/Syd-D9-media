@@ -11,6 +11,6 @@ dependencies:
     - eck.eck_entity_type.performances
 _core:
   default_config_hash: UWQhsdhT839m9dxV16AuE7ovC6ePSu8asJAdBMkawXE
-name: Performance
 type: performance
+name: Performance
 description: ''
