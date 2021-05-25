@@ -30,7 +30,7 @@ class PerformancesTab extends ControllerBase {
 
     return array (
       '#type' => 'markup',
-      '#markup' => drupal_render($content),
+      '#markup' =>  \Drupal::service('renderer')->render($content),
       '#title' =>  $this->t('Performances')      
     );    
   }

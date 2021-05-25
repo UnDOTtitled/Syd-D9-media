@@ -54,7 +54,7 @@ function spektrix_import_preprocess_node(&$variables) {
       } else { // Single performance - return booking link
         
         if ($ids) {
-          $perf = entity_load('performances', array_pop($ids));
+          $perf = \Drupal::entityTypeManager()->getStorage('performances')->load(array_pop($ids));
           
           if ($perf) {
             

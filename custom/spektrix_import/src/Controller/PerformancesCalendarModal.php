@@ -21,7 +21,7 @@ class PerformancesCalendarModal extends ControllerBase {
 		    
     return array (
       '#type' => 'markup',
-      '#markup' => drupal_render($content),
+      '#markup' =>  \Drupal::service('renderer')->render($content),
       '#title' =>  $this->t('Select date'),
       '#attached' => array( 
 		'library' => array( 
@@ -43,7 +43,7 @@ class PerformancesCalendarModal extends ControllerBase {
 		    
     return array (
       '#type' => 'markup',
-      '#markup' => drupal_render($content),
+      '#markup' =>  \Drupal::service('renderer')->render($content),
       '#title' =>  $this->t('Select date'),
       '#attached' => array( 
 		'library' => array( 

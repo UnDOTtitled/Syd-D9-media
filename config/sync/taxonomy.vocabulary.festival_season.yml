@@ -1,0 +1,8 @@
+uuid: 47e4fbe0-0a17-48e8-b400-69f1cc431cd7
+langcode: en
+status: true
+dependencies: {  }
+name: Festival/Season
+vid: festival_season
+description: ''
+weight: 0
