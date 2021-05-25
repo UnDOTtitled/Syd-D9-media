@@ -118,6 +118,8 @@ content:
     third_party_settings: {  }
 hidden:
   field_booking_info: true
+  field_duration: true
+  field_events_season_festival: true
   field_genre: true
   field_metatag: true
   field_price_times: true

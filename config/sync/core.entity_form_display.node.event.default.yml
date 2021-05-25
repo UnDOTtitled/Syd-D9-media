@@ -303,5 +303,7 @@ content:
     settings: {  }
     third_party_settings: {  }
 hidden:
+  field_duration: true
+  field_events_season_festival: true
   promote: true
   sticky: true
