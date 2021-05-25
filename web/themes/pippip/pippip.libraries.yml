@@ -14,3 +14,9 @@ emmsg:
   version: 1.x
   js:
     dist/js/emmsg.js: {}
+
+whatson:
+  version: 1.x
+  js:
+    dist/js/modals.js: {}
+    dist/js/whatson.js: {}

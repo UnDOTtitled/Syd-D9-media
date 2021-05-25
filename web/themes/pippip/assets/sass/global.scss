@@ -44,6 +44,7 @@
 @import 'atoms/buttons';
 @import 'atoms/image-credit';
 @import 'atoms/breadcrumbs';
+@import 'atoms/loader';
 
 /**
  * Molecules
@@ -65,6 +66,7 @@
 @import 'organisms/search-results';
 @import 'organisms/sidebar';
 @import 'organisms/teaser';
+@import 'organisms/modal';
 
 /**
  * Templates
