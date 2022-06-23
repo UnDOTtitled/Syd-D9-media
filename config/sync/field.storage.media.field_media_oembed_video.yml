@@ -1,14 +1,12 @@
-uuid: 2403d7a8-5513-4105-b296-43ab7f0280dd
+uuid: 6577ee94-f961-4442-b83c-7a5b486fea22
 langcode: en
 status: true
 dependencies:
   module:
-    - node
-_core:
-  default_config_hash: nG_WvsdnOjpci-Izcs_lPkttGHAq36HAKM8rwcR2eaM
-id: node.field_image_credit
-field_name: field_image_credit
-entity_type: node
+    - media
+id: media.field_media_oembed_video
+field_name: field_media_oembed_video
+entity_type: media
 type: string
 settings:
   max_length: 255

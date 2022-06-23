@@ -1,18 +1,17 @@
-uuid: f856015a-6819-4a26-82de-a166f3b590d2
+uuid: 899a3d59-444b-4627-8cdf-609f62c6320e
 langcode: en
 status: true
 dependencies:
   module:
     - eck
-    - video_embed_field
-_core:
-  default_config_hash: iripmUnqqKHTNnnj1pTjxyB8IEoJHskJXo4-fyYkW54
+    - media
 id: extra_content.field_video
 field_name: field_video
 entity_type: extra_content
-type: video_embed_field
-settings: {  }
-module: video_embed_field
+type: entity_reference
+settings:
+  target_type: media
+module: core
 locked: false
 cardinality: 1
 translatable: true

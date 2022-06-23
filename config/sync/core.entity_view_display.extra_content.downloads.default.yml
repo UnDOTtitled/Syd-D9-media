@@ -6,8 +6,6 @@ dependencies:
     - eck.eck_type.extra_content.downloads
     - field.field.extra_content.downloads.field_display_title
     - field.field.extra_content.downloads.field_files
-  module:
-    - file
 _core:
   default_config_hash: Xiuog9e6EcjWXaldE2W4JhdrRiebgG9_CPa_QSIbi_Y
 id: extra_content.downloads.default
@@ -26,11 +24,13 @@ content:
     type: boolean
     region: content
   field_files:
-    weight: -4
-    label: hidden
-    settings: {  }
+    type: entity_reference_entity_view
+    weight: -2
+    label: above
+    settings:
+      view_mode: default
+      link: false
     third_party_settings: {  }
-    type: file_default
     region: content
   title:
     label: hidden

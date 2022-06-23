@@ -1,28 +1,26 @@
-uuid: e4a448e3-6056-4369-bd22-e2818ddd2719
+uuid: 5bf9889e-19d1-489d-9ab2-be04ced3dd7d
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_image
-    - node.type.page
+    - field.storage.media.field_media_image_3
+    - media.type.banner_image
   module:
     - image
-_core:
-  default_config_hash: jUw_kq55kpRWkzP8zbIy4zQyVQP8-mpieAl5xIm7I8Q
-id: node.page.field_image
-field_name: field_image
-entity_type: node
-bundle: page
+id: media.banner_image.field_media_image_3
+field_name: field_media_image_3
+entity_type: media
+bundle: banner_image
 label: Image
 description: ''
-required: false
-translatable: false
+required: true
+translatable: true
 default_value: {  }
 default_value_callback: ''
 settings:
-  file_directory: images
+  file_directory: banner-images
   file_extensions: 'png gif jpg jpeg'
-  max_filesize: 750KB
+  max_filesize: '750 KB'
   max_resolution: ''
   min_resolution: ''
   alt_field: true

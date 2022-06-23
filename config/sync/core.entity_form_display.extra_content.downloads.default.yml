@@ -7,7 +7,7 @@ dependencies:
     - field.field.extra_content.downloads.field_display_title
     - field.field.extra_content.downloads.field_files
   module:
-    - file
+    - media_library
 _core:
   default_config_hash: 3Owo840ehVA2Lo8aRfElQzZo6Z-8flU4lveIKQf_t30
 id: extra_content.downloads.default
@@ -23,11 +23,11 @@ content:
     type: boolean_checkbox
     region: content
   field_files:
+    type: media_library_widget
     weight: 3
     settings:
-      progress_indicator: throbber
+      media_types: {  }
     third_party_settings: {  }
-    type: file_generic
     region: content
   title:
     type: string_textfield

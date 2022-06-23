@@ -6,8 +6,6 @@ dependencies:
     - eck.eck_type.extra_content.gallery
     - field.field.extra_content.gallery.field_display_title
     - field.field.extra_content.gallery.field_images
-  module:
-    - image
 _core:
   default_config_hash: 4yM4A0HW1ZkGasiwxlQ0cyWZnbeSulyYyTtJafzOFuU
 id: extra_content.gallery.default
@@ -26,13 +24,13 @@ content:
     type: boolean
     region: content
   field_images:
-    weight: -4
+    type: entity_reference_entity_view
+    weight: -2
     label: hidden
     settings:
-      image_style: ''
-      image_link: ''
+      view_mode: gallery
+      link: false
     third_party_settings: {  }
-    type: image
     region: content
   title:
     label: hidden

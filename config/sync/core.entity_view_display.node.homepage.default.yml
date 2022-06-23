@@ -4,11 +4,9 @@ status: true
 dependencies:
   config:
     - field.field.node.homepage.body
-    - field.field.node.homepage.field_image
-    - field.field.node.homepage.field_image_credit
+    - field.field.node.homepage.field_banner_image
     - node.type.homepage
   module:
-    - image
     - text
     - user
 _core:
@@ -25,22 +23,14 @@ content:
     settings: {  }
     third_party_settings: {  }
     region: content
-  field_image:
-    type: image
-    weight: 0
-    label: hidden
+  field_banner_image:
+    type: entity_reference_entity_view
+    weight: 101
+    label: above
     settings:
-      image_style: ''
-      image_link: ''
+      view_mode: default
+      link: false
     third_party_settings: {  }
-    region: content
-  field_image_credit:
-    weight: 103
-    label: hidden
-    settings:
-      link_to_entity: false
-    third_party_settings: {  }
-    type: string
     region: content
   links:
     weight: 100

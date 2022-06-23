@@ -1,21 +1,18 @@
-uuid: 36ae5bc3-1fe4-4d36-a4ee-9fddf4f37288
+uuid: ad325311-c006-4a98-8dad-1b431476d41c
 langcode: en
 status: true
 dependencies:
   module:
     - file
     - image
-    - node
-_core:
-  default_config_hash: Vj8d9TJ6hoPgs2L_Hk9k4dqduwOCc2ADmCur4tfw-3w
-id: node.field_image
-field_name: field_image
-entity_type: node
+    - media
+id: media.field_media_image_3
+field_name: field_media_image_3
+entity_type: media
 type: image
 settings:
-  uri_scheme: public
   default_image:
-    uuid: ''
+    uuid: null
     alt: ''
     title: ''
     width: null
@@ -23,6 +20,7 @@ settings:
   target_type: file
   display_field: false
   display_default: false
+  uri_scheme: public
 module: image
 locked: false
 cardinality: 1

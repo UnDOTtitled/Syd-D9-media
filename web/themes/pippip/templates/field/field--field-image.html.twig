@@ -2,14 +2,18 @@
 {# {% set webp = 'webp' %} #}
 
 {% for item in items %}
+  {% set jpg= 'jpg' %}
+  {% set webp = 'webp' %}
+  {% set image = file_url(item['content']['#media'].field_media_image.entity.uri.value) %}
 
-  {% set imageUrl = item.content['#item'].entity.uri.value %}
-  {% set image = imageUrl|image_style('inline_image') %}
+  {# Lazy disabled for now #}
 
   <picture>
-    {# <source data-srcset="{{ image|replace({ (jpg): webp }) }}" type="image/webp"> #}
+    <source data-srcset="{{ image|replace({ (jpg): webp }) }}" type="image/webp">
     <source data-srcset="{{ image }}" type="image/jpeg">
-    <img data-src="{{ image }}" alt="{{ item.content['#item'].alt }}" class="lazy" title="{{ item.content['#item'].title }}" />
+    <img src="{{ image }}" alt="{{ item['content']['#media'].field_media_image[0]['#item'].alt }}" title="{{ content.field_image[0]['#item'].title }}" />
   </picture>
+
+  {% include '@pippip/partials/atoms/image-credit.twig' with {credit: item['content']['#media'].field_image_credit.getValue()[0]['value']} %}
 
 {% endfor %}

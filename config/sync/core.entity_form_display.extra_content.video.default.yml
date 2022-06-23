@@ -7,7 +7,7 @@ dependencies:
     - field.field.extra_content.video.field_display_title
     - field.field.extra_content.video.field_video
   module:
-    - video_embed_field
+    - media_library
 _core:
   default_config_hash: f7ABjbRDBS2AR0knrRod28YpeUJxtqEc0A_Vy5BDLzQ
 id: extra_content.video.default
@@ -23,10 +23,11 @@ content:
     type: boolean_checkbox
     region: content
   field_video:
+    type: media_library_widget
     weight: 3
-    settings: {  }
+    settings:
+      media_types: {  }
     third_party_settings: {  }
-    type: video_embed_field_textfield
     region: content
   title:
     type: string_textfield

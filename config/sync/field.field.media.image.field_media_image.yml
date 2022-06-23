@@ -1,28 +1,26 @@
-uuid: fa29cca4-13b8-4bc0-b83a-26801f4fc278
+uuid: 03e54fcc-a672-4e4d-8bd3-c0450e050359
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_image
-    - node.type.homepage
+    - field.storage.media.field_media_image
+    - media.type.image
   module:
     - image
-_core:
-  default_config_hash: aCAUUynxHBSB534EJP19yG6OycZgb9VWNpoBuiRg_rk
-id: node.homepage.field_image
-field_name: field_image
-entity_type: node
-bundle: homepage
+id: media.image.field_media_image
+field_name: field_media_image
+entity_type: media
+bundle: image
 label: Image
 description: ''
-required: false
-translatable: false
+required: true
+translatable: true
 default_value: {  }
 default_value_callback: ''
 settings:
   file_directory: images
   file_extensions: 'png gif jpg jpeg'
-  max_filesize: 750KB
+  max_filesize: ''
   max_resolution: ''
   min_resolution: ''
   alt_field: true

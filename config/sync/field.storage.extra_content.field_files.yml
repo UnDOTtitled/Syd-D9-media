@@ -1,24 +1,19 @@
-uuid: 9f43be8a-38d0-46ef-8a00-070580664d2a
+uuid: eb5d472f-cfb2-4b17-9170-3f7de681e955
 langcode: en
 status: true
 dependencies:
   module:
     - eck
-    - file
-_core:
-  default_config_hash: lRh566OmTV2DkKzloxWEtmZ7mJlwDOfJv3a40Z9zfYA
+    - media
 id: extra_content.field_files
 field_name: field_files
 entity_type: extra_content
-type: file
+type: entity_reference
 settings:
-  display_field: false
-  display_default: false
-  uri_scheme: public
-  target_type: file
-module: file
+  target_type: media
+module: core
 locked: false
-cardinality: -1
+cardinality: 1
 translatable: true
 indexes: {  }
 persist_with_no_fields: false

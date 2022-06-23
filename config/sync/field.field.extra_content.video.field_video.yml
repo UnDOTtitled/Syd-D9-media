@@ -1,27 +1,29 @@
-uuid: 1b30a8fb-2501-4b5e-be0f-bc247d2c35a1
+uuid: 88099ca0-fb03-430a-8764-4a565eabd42f
 langcode: en
 status: true
 dependencies:
   config:
     - eck.eck_type.extra_content.video
     - field.storage.extra_content.field_video
-  module:
-    - video_embed_field
-_core:
-  default_config_hash: sVcGxMVjUSGRW0HuvrVe__mXWwACHh_byVtZZ7L6VGI
+    - media.type.remote_video
 id: extra_content.video.field_video
 field_name: field_video
 entity_type: extra_content
 bundle: video
-label: 'Video link'
+label: Video
 description: ''
 required: false
 translatable: false
 default_value: {  }
 default_value_callback: ''
 settings:
-  allowed_providers:
-    vimeo: vimeo
-    youtube: youtube
-    youtube_playlist: '0'
-field_type: video_embed_field
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      remote_video: remote_video
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

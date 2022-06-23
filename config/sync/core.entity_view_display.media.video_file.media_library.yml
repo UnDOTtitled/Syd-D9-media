@@ -1,0 +1,30 @@
+uuid: c5bf497a-6232-4c18-bef9-78a51bae3dd1
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.media.media_library
+    - field.field.media.video_file.field_media_video_file
+    - image.style.medium
+    - media.type.video_file
+  module:
+    - image
+id: media.video_file.media_library
+targetEntityType: media
+bundle: video_file
+mode: media_library
+content:
+  thumbnail:
+    type: image
+    label: hidden
+    settings:
+      image_style: medium
+      image_link: ''
+    weight: 0
+    third_party_settings: {  }
+    region: content
+hidden:
+  created: true
+  field_media_video_file: true
+  name: true
+  uid: true

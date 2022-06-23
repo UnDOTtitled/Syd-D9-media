@@ -7,7 +7,6 @@ dependencies:
     - field.field.extra_content.image_text.field_copy
     - field.field.extra_content.image_text.field_image
   module:
-    - image
     - text
 id: extra_content.image_text.default
 targetEntityType: extra_content
@@ -22,13 +21,13 @@ content:
     type: text_default
     region: content
   field_image:
-    weight: -4
+    weight: -2
     label: hidden
     settings:
-      image_style: ''
-      image_link: ''
+      link: true
+      view_mode: default
     third_party_settings: {  }
-    type: image
+    type: entity_reference_entity_view
     region: content
   title:
     label: hidden

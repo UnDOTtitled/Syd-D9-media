@@ -5,12 +5,10 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.page.body
+    - field.field.node.page.field_banner_image
     - field.field.node.page.field_content
-    - field.field.node.page.field_image
-    - field.field.node.page.field_image_credit
     - node.type.page
   module:
-    - image
     - smart_trim
     - user
 _core:
@@ -39,20 +37,11 @@ content:
         trim_zero: false
     third_party_settings: {  }
     region: content
-  field_image:
-    weight: 2
-    label: hidden
-    settings:
-      image_style: ''
-      image_link: ''
-    third_party_settings: {  }
-    type: image
-    region: content
   links:
     weight: 1
     region: content
     settings: {  }
     third_party_settings: {  }
 hidden:
+  field_banner_image: true
   field_content: true
-  field_image_credit: true

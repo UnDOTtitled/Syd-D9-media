@@ -1,29 +1,17 @@
-uuid: e800db01-7634-4fcc-ad80-2447254296a1
+uuid: a5773aa0-1acc-4f05-b19f-8cc7d7f67b69
 langcode: en
 status: true
 dependencies:
   module:
     - eck
-    - file
-    - image
-_core:
-  default_config_hash: 5kjhs6JTQ1faFCNICxHhgrKWLNiWDltw8O_yT8YpC6s
+    - media
 id: extra_content.field_images
 field_name: field_images
 entity_type: extra_content
-type: image
+type: entity_reference
 settings:
-  uri_scheme: public
-  default_image:
-    uuid: ''
-    alt: ''
-    title: ''
-    width: null
-    height: null
-  target_type: file
-  display_field: false
-  display_default: false
-module: image
+  target_type: media
+module: core
 locked: false
 cardinality: -1
 translatable: true

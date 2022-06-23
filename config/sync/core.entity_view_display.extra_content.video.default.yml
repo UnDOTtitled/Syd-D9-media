@@ -6,8 +6,6 @@ dependencies:
     - eck.eck_type.extra_content.video
     - field.field.extra_content.video.field_display_title
     - field.field.extra_content.video.field_video
-  module:
-    - video_embed_field
 _core:
   default_config_hash: HXWeK5jFgI7Yt7-sp9WgbJwMyRUIKNicpUA5r1M39UQ
 id: extra_content.video.default
@@ -26,15 +24,13 @@ content:
     type: boolean
     region: content
   field_video:
-    weight: -4
-    label: visually_hidden
+    type: entity_reference_entity_view
+    weight: -2
+    label: above
     settings:
-      responsive: true
-      width: 854
-      height: 480
-      autoplay: false
+      view_mode: default
+      link: false
     third_party_settings: {  }
-    type: video_embed_field_video
     region: content
   title:
     label: hidden

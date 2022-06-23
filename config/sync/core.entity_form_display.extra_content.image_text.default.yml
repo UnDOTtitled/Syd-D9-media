@@ -4,11 +4,10 @@ status: true
 dependencies:
   config:
     - eck.eck_type.extra_content.image_text
-    - entity_browser.browser.browse_files
     - field.field.extra_content.image_text.field_copy
     - field.field.extra_content.image_text.field_image
   module:
-    - entity_browser
+    - media_library
     - text
 id: extra_content.image_text.default
 targetEntityType: extra_content
@@ -24,18 +23,11 @@ content:
     type: text_textarea
     region: content
   field_image:
-    weight: 0
+    weight: 3
     settings:
-      entity_browser: browse_files
-      field_widget_remove: true
-      open: true
-      selection_mode: selection_append
-      preview_image_style: thumbnail
-      field_widget_edit: true
-      field_widget_replace: false
-      view_mode: default
+      media_types: {  }
     third_party_settings: {  }
-    type: entity_browser_file
+    type: media_library_widget
     region: content
   title:
     type: string_textfield

@@ -65,3 +65,11 @@ All notable changes to this project will be documented in this file.
 ### Added
 
 - Ddev setup
+
+## 2022-06-22
+
+- Added media entities
+
+### Changed
+
+- Twig templates displaying image fields
